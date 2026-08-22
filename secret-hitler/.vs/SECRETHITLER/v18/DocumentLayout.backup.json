@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Scripts\\GameManager.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAADwv4kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T19:06:58.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeckManager.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\DeckManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\Models\\DeckManager.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\DeckManager.cs",
+              "RelativeToolTip": "Scripts\\Models\\DeckManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T18:30:02.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\Models\\Player.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Player.cs",
+              "RelativeToolTip": "Scripts\\Models\\Player.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T18:25:49.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "Scripts\\Models\\Enums.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Enums.cs",
+              "RelativeToolTip": "Scripts\\Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-20T13:22:03.278Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
