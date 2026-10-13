@@ -8,4 +8,6 @@ public static class Enums
 	public enum PolicyType {Liberal, Fascist}
 	public enum GameState { Setup, RoleReveal, Nomination, Voting, LegislativePresident, LegislativeChancellor, ExecutiveAction, GameOver }
 	public enum VoteType { Ja, Nein }
+	public enum VoteResults { GovernmentRejected, GovernmentApproved }
+    public enum ExecutiveActionType { None, InvestigateLoyalty, SpecialElection, PolicyPeek, Execution }
 }

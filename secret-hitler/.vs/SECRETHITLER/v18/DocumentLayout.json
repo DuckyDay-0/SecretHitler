@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\controler\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\controler\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +13,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\deckmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\uicontroller\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\uicontroller\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\controler\\executivemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\controler\\executivemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\controler\\legislativemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\controler\\legislativemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\models\\votingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\models\\votingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|c:\\godot\\secrethitler\\secrethitler\\secret-hitler\\scripts\\controler\\votingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D38CF63-8C9A-4551-99C9-989DFEC21E2F}|SecretHitler.csproj|solutionrelative:scripts\\controler\\votingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +54,112 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UiController.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\UIController\\UiController.cs",
+              "RelativeDocumentMoniker": "Scripts\\UIController\\UiController.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\UIController\\UiController.cs",
+              "RelativeToolTip": "Scripts\\UIController\\UiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T19:42:36.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExecutiveManager.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\ExecutiveManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\Controler\\ExecutiveManager.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\ExecutiveManager.cs",
+              "RelativeToolTip": "Scripts\\Controler\\ExecutiveManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T19:18:14.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LegislativeManager.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\LegislativeManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\Controler\\LegislativeManager.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\LegislativeManager.cs",
+              "RelativeToolTip": "Scripts\\Controler\\LegislativeManager.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAYwGsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T13:38:45.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VotingResult.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\VotingResult.cs",
+              "RelativeDocumentMoniker": "Scripts\\Models\\VotingResult.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\VotingResult.cs",
+              "RelativeToolTip": "Scripts\\Models\\VotingResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T12:43:17.616Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Scripts\\GameManager.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwJ4AAAAhAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\GameManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\Controler\\GameManager.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\GameManager.cs",
+              "RelativeToolTip": "Scripts\\Controler\\GameManager.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAAAwE8BAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T19:06:58.993Z",
+              "WhenOpened": "2026-09-02T10:39:49.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "VotingManager.cs",
+              "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\VotingManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\Controler\\VotingManager.cs",
+              "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Controler\\VotingManager.cs",
+              "RelativeToolTip": "Scripts\\Controler\\VotingManager.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-22T14:01:17.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DeckManager.cs",
               "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\DeckManager.cs",
               "RelativeDocumentMoniker": "Scripts\\Models\\DeckManager.cs",
               "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\DeckManager.cs",
               "RelativeToolTip": "Scripts\\Models\\DeckManager.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwDoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T18:30:02.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-20T18:30:02.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Player.cs",
               "RelativeDocumentMoniker": "Scripts\\Models\\Player.cs",
               "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Player.cs",
               "RelativeToolTip": "Scripts\\Models\\Player.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBIAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-20T18:25:49.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Enums.cs",
               "RelativeDocumentMoniker": "Scripts\\Models\\Enums.cs",
               "ToolTip": "C:\\Godot\\SecretHitler\\SecretHitler\\secret-hitler\\Scripts\\Models\\Enums.cs",
               "RelativeToolTip": "Scripts\\Models\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-20T13:22:03.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-20T13:22:03.278Z"
             }
           ]
         }

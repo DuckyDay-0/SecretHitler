@@ -2,6 +2,7 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using static Enums;
 using static Godot.OpenXRCompositionLayer;
 using static Godot.Projection;
 
@@ -19,8 +20,11 @@ public partial class GameManager : Node
 	public Player? NominatedChancellor { get; set; }
 	public Player? PrevPresident { get; private set; }
 	public Player? PrevChancellor { get; private set; }
-
-	public int GetAlivePlayer => players.Count(p => p.IsAlive);
+	public VotingManager Voting { get; private set; } = new();
+	public LegislativeManager Legislative { get; private set; } = null;
+	public ExecutiveManager Executive { get; private set; }
+	private int? regularPresidentBackupId = null;
+    public int GetAlivePlayer => players.Count(p => p.IsAlive);
 
     private Random rnd = new Random();
 
@@ -29,10 +33,177 @@ public partial class GameManager : Node
     public override void _Ready()
     {
         Instance = this;
+		Voting.OnVotingCompleted += HandleVotingResult;
+		StartGame(new List<string> { "Играч 1", "Играч 2", "Играч 3", "Играч 4", "Играч 5" });
+        Legislative = new LegislativeManager(Deck);
+		Legislative.OnPolicyEnacted += HandlePolicyEnacted;
+		Legislative.OnVetoApproved += HandleVetoApproved;
+
+		Executive = new ExecutiveManager(Deck, players);
+		Executive.OnPlayerExecuted += HandlePlayerExecuted;
     }
 
+    private void CheckExecutiveAction()
+    {
+        var action = Executive.DetermineAction(FascistPolicies, players.Count);
 
-	public void NextPresident()
+        if (action == ExecutiveActionType.None)
+        {
+            AdvancePresident();
+            return;
+        }
+
+        GD.Print($"[GameManager] Активирана президентска сила: {action}");
+    }
+
+    public void FinishExecutiveAction()
+    {
+        if (Executive.SpecialElectionTarget != null)
+        {
+            regularPresidentBackupId = CurrentPresidentIndex;
+            CurrentPresidentIndex = players.IndexOf(Executive.SpecialElectionTarget);
+            Executive.ExecuteSpecialElection(null!); // Нулираме избора
+            NominatedChancellor = null;
+            GD.Print($"[GameManager] Започва извънреден ред на: {CurrentPresident?.Name}");
+        }
+        else
+        {
+            AdvancePresident();
+        }
+    }
+
+    public void AdvancePresident()
+    {
+        if (GetAlivePlayer == 0) return;
+
+        if (regularPresidentBackupId.HasValue)
+        {
+            CurrentPresidentIndex = regularPresidentBackupId.Value;
+            regularPresidentBackupId = null;
+        }
+
+        do
+        {
+            CurrentPresidentIndex = (CurrentPresidentIndex + 1) % players.Count;
+        }
+        while (!players[CurrentPresidentIndex].IsAlive);
+
+        NominatedChancellor = null;
+        GD.Print($"[GameManager] Нов редовен президент: {CurrentPresident?.Name}");
+    }
+
+    private void HandlePlayerExecuted(Player executedPlayer, bool wasHitler)
+    {
+        if (wasHitler)
+        {
+            GD.Print("[GameManager] КРАЙ НА ИГРАТА! Хитлер беше убит! ПОБЕДА ЗА ЛИБЕРАЛИТЕ!");
+            return;
+        }
+
+        GD.Print($"[GameManager] Играта продължава без {executedPlayer.Name}.");
+        FinishExecutiveAction();
+    }
+
+    public void StartLegislativePhase()
+	{ 
+		GD.Print("[GameManager] Legislative Session Started");
+        bool vetoUnlocked = FascistPolicies >= 5;
+		Legislative.StartSession(vetoUnlocked);
+    }
+
+	public void HandlePolicyEnacted(Enums.PolicyType enactedPolicy)
+	{
+		if (enactedPolicy == Enums.PolicyType.Fascist)
+		{
+			FascistPolicies++;
+			GD.Print($"{FascistPolicies} Fascist Policie accepted");
+		}
+
+		if (enactedPolicy == Enums.PolicyType.Liberal)
+		{
+			LiberalPolicies++;
+			GD.Print($"{LiberalPolicies} Liberal Policies accepted");
+		}
+
+		CheckEndGameCondition(enactedPolicy);
+	}
+
+	public void HandleVetoApproved()
+	{
+		GD.Print("[GameManager] Вето е одобрено! Изборите се провалиха.");
+		OnElectionFail();
+	}
+
+	private void CheckEndGameCondition(Enums.PolicyType enactedPolicy)
+	{
+		if (LiberalPolicies >= 5)
+		{ 
+			GD.Print("[GameManager] КРАЙ НА ИГРАТА! 5 Liberal Policies accepted! ПОБЕДА ЗА ЛИБЕРАЛТЕ!");
+			return;
+		}
+
+		if (FascistPolicies >= 6)
+		{
+			GD.Print("[GameManager] КРАЙ НА ИГРАТА! 6 Fascist Policies accepted! ПОБЕДА ЗА ФАШИСТИТЕ!");
+			return;
+		}
+
+		if (enactedPolicy == Enums.PolicyType.Fascist)
+		{
+			CheckExcecutiveAction();
+		}
+		else 
+		{
+			AdvancePresident();
+		}
+	}
+
+	private void CheckExcecutiveAction()
+	{
+        GD.Print($"[GameManager] Фашистки закон активиран на позиция {FascistPolicies}. Проверка за Executive Action...");
+		AdvancePresident();
+    }
+
+    public void StartVotingPhase()
+	{
+		if (NominatedChancellor == null)
+		{ 
+			GD.PrintErr("No nominated chancellor to vote on.");
+			return;
+		}
+
+		GD.Print("Voting Session Started");
+		Voting.StartNewVotingSession(players);
+    }
+
+	public void HandleVotingResult(VotingResult result)
+	{
+		GD.Print($"--- РЕЗУЛТАТИ ОТ ГЛАСУВАНЕТО ---");
+		GD.Print($"Ja: {result.JaCount} | Nein: {result.NeinCount} -> {(result.Passed ? "УСПЕШНО" : "ПРОВАЛЕНО")}");
+
+
+		foreach (var (playerId, vote) in result.IndividualVotes)
+		{
+			var player = players.First(p => p.ID == playerId);
+			GD.Print($"{player.Name} : {vote}");
+		}
+
+		if (result.Passed)
+		{
+			if (FascistPolicies >= 3 && NominatedChancellor.SecretRole == Enums.Role.Hitler)
+			{
+				GD.Print("[GameManager] КРАЙ НА ИГРАТА! Хитлер беше избран за канцлер след 3-тия фашистки закон! ПОБЕДА ЗА ФАШИСТИТЕ!");
+				return;
+			}
+			OnElectionSuccess(NominatedChancellor);
+		}
+		else
+		{
+			OnElectionFail();
+		}
+	}
+
+    public void NextPresident()
     {
         if (players.Count == 0)
         {
@@ -162,6 +333,7 @@ public partial class GameManager : Node
         for (int i = 0; i < playersName.Count; i++)
         {
             players.Add(new Player(i, playersName[i]));
+			GD.Print($"[GameManager] Играч {i + 1}: {playersName[i]} е добавен към играта.");
         }
     }
 

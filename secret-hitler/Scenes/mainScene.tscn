@@ -1,3 +1,72 @@
-[gd_scene format=3 uid="uid://ppqljpbp45by"]
+[gd_scene format=3 uid="uid://mcm75n6y1mg6"]
 
-[node name="Node2D" type="Node2D" unique_id=563172106]
+[ext_resource type="Script" uid="uid://d34vw57gbn4wh" path="res://Scripts/UIController/UiController.cs" id="1_2c717"]
+
+[node name="MainGameView" type="Control" unique_id=1351025098]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="." unique_id=1918853243]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panels" type="Panel" parent="." unique_id=1228763548]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SetupPanel" type="Panel" parent="Panels" unique_id=1815269620]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PrivacyPanel" type="Panel" parent="Panels" unique_id=2144446221]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RoleRevealPanel" type="Panel" parent="Panels" unique_id=2017546862]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameBoardPanel" type="Panel" parent="Panels" unique_id=1257207893]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NominationPanel" type="Panel" parent="Panels" unique_id=453511906]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VotingPanel" type="Panel" parent="Panels" unique_id=963862321]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VoteResultsPanel" type="Panel" parent="Panels" unique_id=368889747]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LegislativePanel" type="Panel" parent="Panels" unique_id=1958464240]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ExecutivePanel" type="Panel" parent="Panels" unique_id=1141240993]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameOverPanel" type="Panel" parent="Panels" unique_id=1021140598]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UIController" type="Node" parent="." unique_id=392528669]
+script = ExtResource("1_2c717")
